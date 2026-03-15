@@ -12,9 +12,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CreateUserResponseDTO {
-
-    private String name;
-    private String job;
-    private Integer id;
+    private String username;
+    private int id;
+    private String email;
+    private String password;
     private String createdAt;
 }

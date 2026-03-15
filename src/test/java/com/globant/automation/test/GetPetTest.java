@@ -17,7 +17,7 @@ import static org.testng.Assert.assertEquals;
 
 public class GetPetTest extends TestRunner {
 
-    @Test(testName = "Requirement 4: Consult data of a specific pet")
+    @Test(testName = "Consult data of a specific pet")
     public void getPetstorePetTest() {
         // Define the pet to search (ensure this user exists in the Petstore)
         Integer pet_id = 10;

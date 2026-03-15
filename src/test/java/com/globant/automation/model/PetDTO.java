@@ -16,4 +16,5 @@ public class PetDTO {
 
     private Integer id;
     private String name;
+    private String status;
 }
