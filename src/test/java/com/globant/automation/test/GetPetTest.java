@@ -1,7 +1,6 @@
 package com.globant.automation.test;
 
 import com.globant.automation.config.TestRunner;
-import com.globant.automation.model.GetUserResponseDTO;
 import com.globant.automation.model.PetDTO;
 import com.globant.automation.model.UserDTO;
 import com.globant.automation.request.RequestBuilder;
