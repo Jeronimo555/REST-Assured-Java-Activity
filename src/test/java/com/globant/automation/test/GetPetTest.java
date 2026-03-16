@@ -30,8 +30,8 @@ public class GetPetTest extends TestRunner {
 
         //We make a couple of assertions to make sure the response body aligns with our data.
         assertEquals(response.getStatusCode(), 200, "The status code doesn't match.");
-        assertEquals(userResponse.getId(), pet_id, "The id should match");
-        assertEquals(userResponse.getName(), pet_name, "The id should match");
+        assertEquals(userResponse.getId(), pet_id.longValue(), "The id should match");
+        assertEquals(userResponse.getName(), pet_name, "The name should match");
 
         System.out.println("Pet found: " + userResponse.getName());
 
