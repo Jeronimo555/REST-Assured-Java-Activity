@@ -36,7 +36,7 @@ public class GetUserLoginTest extends TestRunner {
         assertEquals(response.getStatusCode(), 200, "Setup failed: Could not create user for login test.");
     }
 
-    @Test(testName = "2. Login to the system")
+    @Test(testName = "Login to the system")
     public void loginUserTest() {
         //Set up query parameters for login
         Map<String, String> queryParams = new HashMap<>();
