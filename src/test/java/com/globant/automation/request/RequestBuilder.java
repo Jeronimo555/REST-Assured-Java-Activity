@@ -41,11 +41,9 @@ public class RequestBuilder {
         return requestSpecification.post(path);
     }
 
-    public static Response deleteRequest(String baseUrl, String path, Integer id, String apikey) {
+    public static Response deleteRequest(String baseUrl, String path, String apikey) {
         RequestSpecification requestSpecification = RestAssured.given()
-                .pathParam("idUser", id)
                 .baseUri(baseUrl)
-                .basePath(path)
                 .header(HttpHeaders.CONTENT_TYPE, ContentType.APPLICATION_JSON.getMimeType())
                 .filter(new RequestLoggingFilter())
                 .filter(new ResponseLoggingFilter());
@@ -54,6 +52,6 @@ public class RequestBuilder {
             requestSpecification.header(APIKEY, apikey);
         }
 
-        return requestSpecification.delete("/{idUser}");
+        return requestSpecification.delete(path);
     }
 }

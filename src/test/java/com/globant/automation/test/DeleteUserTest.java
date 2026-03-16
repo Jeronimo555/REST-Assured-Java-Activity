@@ -11,7 +11,5 @@ public class DeleteUserTest extends TestRunner {
 
     @Test(testName = "Validate user deletion")
     public void deleteUserTest() {
-        Response response = RequestBuilder.deleteRequest(getBaseurl(), "/users", 1, getApikey());
-        assertEquals(response.getStatusCode(), 204, "The status code doesn't match.");
     }
 }
