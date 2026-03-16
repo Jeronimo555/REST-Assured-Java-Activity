@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PetDTO {
 
-    private Integer id;
+    private Long id;
     private String name;
     private String status;
 }
